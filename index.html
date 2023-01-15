@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="app/style/style.css">
+  <script src="script.js" defer></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  
+  <title>Bookmark landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header flex flex-jc-sb flex-ai-c">
+
+      <!-- header logo  -->
+      <a href="#" class="header__logo flex flex-jc-c flex-ai-c">
+        <img src="images/logo-bookmark.svg" alt="">
+
+      </a>
+
+      <!-- header menu  -->
+      <div class="header__menu flex flex-ai-c hide-mobile">
+
+        <!-- menu links -->
+        <div class="header__links">
+          <a href="#featured">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Contact</a>
+
+        </div>
+
+        <!-- menu login button  -->
+        <div class="header__loginButton">
+          <a href="#" class="button">Login</a>
+        </div>
+
+      </div>
+
+      <!-- mobile menu  -->
+
+      <div class="header__toggleBtn hide-desktop">
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="header__mobileMenu">
+        <!-- mobile menu logo  -->
+        <a href="#" class="header__mobileLogo">
+          <img src="images/logo-bookmark-white.svg" alt="Bookmark?">
+        </a>
+  
+        <!-- mobile menu  -->
+        <div class="header__mobileLinks">
+          <a href="#">Features</a>
+          <a href="#feature">Pricing</a>
+          <a href="#">Contact</a>
+  
+  
+        </div>
+  
+        <!-- mobile menu login button  -->
+        <div class="header__mobileLoginBtn">
+          <a href="#" class="button">
+            Login
+  
+          </a>
+        </div>
+  
+        <div class="header__social">
+          <a href="#" style="display: inline-block;margin-right: 30px;">
+            <svg width="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" fill="#FFF"/></svg>
+          </a>
+          <a href="#">
+            
+            <svg width="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z" fill="#FFF"/></svg>
+            
+          </a>
+        </div>
+  
+      </div>
+      <div class="overlay"></div>
+      
+      
+    </header>
+
+  </div>
+
+  <!-- hero section -->
+  <div class="container">
+    <div class="hero">
+
+      <!-- hero image  -->
+      <div class="hero__image"><img src="images/illustration-hero.svg" alt="hero image"></div>
+
+      <!-- hero text  -->
+      <div class="hero__text">
+        <!-- hero heading  -->
+        <div class="hero__heading">
+          <h1>A Simple Bookmark Manager</h1>
+
+        </div>
+
+        <!-- hero description -->
+        <div class="hero__description">
+          A clean and simple interface to organize your favourite websites. Open a new 
+          browser tab and see your sites load instantly. Try it for free.
+
+        </div>
+        
+        <!-- hero button -->
+        <div class="hero__buttons">
+          <a href="#" class="button hero__ctaBtn1">Get it on Chrome</a>
+          <a href="#" class="button hero__ctaBtn2">Get it on Firefox</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+  
+
+
+
+
+<!-- feature section  -->
+  
+  <div class="container">
+    <div class="feature" id="featured">
+
+      <!-- features heading  -->
+      <div class="feature__heading">
+        <h2>Features</h2>
+      </div>
+
+      <!-- features description -->
+      <div class="feature__desc">
+        Our aim is to make it quick and easy for you to access your favourite websites. 
+        Your bookmarks sync between your devices so you can access them on the go.
+
+      </div>
+
+      <!-- features tabs -->
+
+      <div class="feature__tabs">
+
+        <!-- tabs  -->
+        
+        <!-- tab 1 -->
+        <button class="feature__tab tablinks" onclick="openTab(event,'bookmarking') " id="defaultOpen">Simple Bookmarking</button><!-- tab 2 --><button class="feature__tab tablinks" onclick="openTab(event,'searching') ">Speedy Searching</button><!-- tab 3 --><button class="feature__tab tablinks" onclick="openTab(event,'sharing') ">Easy Sharing</button>
+      </div>
+
+      <!-- tab contents -->
+      <div class="feature__tabContents">
+
+      
+        <!-- tab content 1 -->
+        <div class="tabcontent" id="bookmarking">
+
+          <div class="feature__tabContent">
+            <!-- tab content image  -->
+            <div class="feature__tabContentImg">
+              <img src="images/illustration-features-tab-1.svg" alt="bookmarking">
+
+            </div>
+          
+            <!-- tab content text  -->
+
+            <div class="feature__tabContentText">
+              <!-- feature content heading  -->
+              <div class="feature__tabContentHeading">
+                <h2>Bookmark in one click
+                </h2>
+              </div>
+
+              <!-- feature content description -->
+              <div class="feature__tabContentDesc">
+                Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                gives you complete control over how you manage your favourite sites.
+
+              </div>
+
+              <!-- feature content cta button -->
+              <div class="feature__tabContentBtn">
+
+                <a href="#" class="button">More Info</a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- tab content 2 -->
+        <div class="tabcontent" id="searching">
+
+          <div class="feature__tabContent">
+            <!-- tab content image  -->
+            <div class="feature__tabContentImg">
+              <img src="images/illustration-features-tab-2.svg" alt="bookmarking">
+
+            </div>
+          
+            <!-- tab content text  -->
+
+            <div class="feature__tabContentText">
+              <!-- feature content heading  -->
+              <div class="feature__tabContentHeading">
+                <h2>
+                  Intelligent search
+
+                </h2>
+              </div>
+
+              <!-- feature content description -->
+              <div class="feature__tabContentDesc">
+                Our powerful search feature will help you find saved sites in no time at all. 
+                No need to trawl through all of your bookmarks.
+              
+                
+
+              </div>
+
+              <!-- feature content cta button -->
+              <div class="feature__tabContentBtn">
+
+                <a href="#" class="button">More Info</a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- tab content 3 -->
+        <div class="tabcontent" id="sharing">
+
+          <div class="feature__tabContent">
+            <!-- tab content image  -->
+            <div class="feature__tabContentImg">
+              <img src="images/illustration-features-tab-3.svg" alt="bookmarking">
+
+            </div>
+          
+            <!-- tab content text  -->
+
+            <div class="feature__tabContentText">
+              <!-- feature content heading  -->
+              <div class="feature__tabContentHeading">
+                <h2>Share your bookmarks
+
+                </h2>
+              </div>
+
+              <!-- feature content description -->
+              <div class="feature__tabContentDesc">
+                Easily share your bookmarks and collections with others. Create a shareable 
+                link that you can send at the click of a button
+              
+                
+
+              </div>
+
+              <!-- feature content cta button -->
+              <div class="feature__tabContentBtn">
+
+                <a href="#" class="button">More Info</a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        
+      </div>
+
+
+    </div>
+
+  </div>
+
+  
+
+
+  <!-- extension section  -->
+
+  <div class="container">
+
+    <div class="extension">
+
+      <!-- extension heading  -->
+      <div class="extension__heading">
+        <h2>Download the extension</h2>
+      </div>
+      
+      <!-- extension description -->
+      <div class="extension__desc">
+        We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+        got a favourite you’d like us to prioritize.
+
+      </div>
+
+      <!-- extension cards -->
+      <div class="extension__cards">
+
+        <!-- card -> Chrome -->
+        <div class="extension__card">
+
+          <!-- card image -->
+          <div class="extension__img">
+            <img src="images/logo-chrome.svg" alt="Chrome">
+          </div>
+
+          <!-- card title -->
+          <div class="extension__title">
+            <h3>Add to Chrome</h3>
+
+          </div>
+
+          <!-- card subtitle -->
+          <div class="extension__subTitle">
+            Minimum version 62
+
+          </div>
+
+          <!-- card button -->
+          <a href="#" class="extension__button button">Add & Install Extension</a>
+          
+        </div>
+
+        <!-- card -> firefox -->
+        <div class="extension__card">
+
+          <!-- card image -->
+          <div class="extension__img">
+            <img src="images/logo-firefox.svg" alt="Chrome">
+          </div>
+
+          <!-- card title -->
+          <div class="extension__title">
+            <h3>Add to Firefox</h3>
+
+          </div>
+
+          <!-- card subtitle -->
+          <div class="extension__subTitle">
+            Minimum version 55
+
+          </div>
+
+          <!-- card button -->
+          <a href="#" class="extension__button button">Add & Install Extension</a>
+          
+        </div>
+
+        <!-- card -> opera -->
+        <div class="extension__card">
+
+          <!-- card image -->
+          <div class="extension__img">
+            <img src="images/logo-opera.svg" alt="Chrome">
+          </div>
+
+          <!-- card title -->
+          <div class="extension__title">
+            <h3>Add to Opera</h3>
+
+          </div>
+
+          <!-- card subtitle -->
+          <div class="extension__subTitle">
+            Minimum version 46
+
+          </div>
+
+          <!-- card button -->
+          <a href="#" class="extension__button button">Add & Install Extension</a>
+          
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- faq section -->
+  <div class="container">
+    <div class="faq">
+      
+      <!-- faq heading  -->
+      <div class="faq__heading">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <!-- faq description -->
+      <div class="faq__desc">
+        Here are some of our FAQs. If you have any other questions you’d like 
+        answered please feel free to email us.
+
+      </div>
+
+
+      <!-- faq accordion -->
+      <div class="faq__accordions">
+        
+         <!-- Question 1 -->
+        <button class="faq__accordion accordion">What is Bookmark?</button>
+
+        <div class="faq__panel panel">
+          <!-- Answer 1 -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+        </div>
+        
+        <!-- Question 2 -->
+       <button class="faq__accordion accordion">How can I request a new browser?</button>
+
+       <div class="faq__panel panel">
+         <!-- Answer 2 -->
+         <p>
+          Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+          Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+          ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+          Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+        </div>
+        
+        <!-- Question 3 -->
+        <button class="faq__accordion accordion">
+        Is there a mobile app?</button>
+
+        <div class="faq__panel panel">
+          <!-- Answer 3 -->
+          <p>
+            Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+            urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+            sollicitudin ex et ultricies bibendum</p>
+        </div>
+        
+        <!-- Question 4 -->
+        <button class="faq__accordion accordion">
+        What about other Chromium browsers?</button>
+
+        <div class="faq__panel panel">
+          <!-- Answer 4 -->
+          <p>
+          Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+          vitae neque eget nisl gravida pellentesque non ut velit.</p>
+        </div>
+
+
+      </div>
+
+      <a href="#" class="faq__infoBtn">
+        More Info
+      </a>
+
+    </div>
+  </div>
+
+
+
+  <!-- newsletter section  -->
+
+  <div class="container newsletter__contn">
+    <div class="newsletter">
+
+
+      <!-- joined -->
+
+      <div class="newsletter__joined">
+        35,000+ already joined
+      </div>
+
+      <!-- newsletter heading -->
+      <div class="newsletter__heading">
+        <h2>Stay up-to-date with what we’re doing</h2>
+      </div>
+
+      <!-- newsletter form -->
+      <form action="" class="newsletter__form">
+        <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Enter your email address" required>
+        <input type="submit" value="Contact Us">
+
+      </form>
+
+
+    </div>
+
+  </div>
+
+  
+  <!-- footer section  -->
+  <div class="footer__cont">
+  <div class="container">
+    <footer class="footer">
+
+
+      <!-- footer logo  -->
+      <a href="#" class="footer__logo flex flex-ai-c">
+        <img src="images/logo-bookmark-footer.svg" alt="bookmarks">
+      </a>
+
+      <!-- footer links  -->
+      <div class="footer__links">
+        <a href="#featured">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+      </div>
+  
+      <div class="footer__social">
+        <a href="#" style="display: inline-block;margin-right: 30px;">
+          <svg width="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" fill="#FFF"/></svg>
+        </a>
+
+        <a href="#">
+            
+          <svg width="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z" fill="#FFF"/></svg>
+        </a>
+
+      </div>
+
+      
+      
+    </footer>
+
+  </div>
+  </div>
+  <div class="footer__copyright " style="text-align: center; color : #000; font-size: 14px; 
+  font-weight: 400; letter-spacing: 2px; padding: 5px 0;" >
+    coded by miyaad joy...🤍🤍
+  </div>
+
+  <!-- javaScript here  -->
+  
+  <script src="app/js/script.js"></script>
+</body>
+</html>

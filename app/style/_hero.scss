@@ -1,0 +1,101 @@
+.hero
+{
+    margin-bottom: 5.3125rem;
+    text-align: center;
+    @include breakpoint-up(large)
+    {
+        text-align: start;
+        display: flex;
+        gap: 10%;
+        align-items: center;
+        margin-bottom: 5.3125rem;
+    }
+
+    &__image
+    {
+        @include breakpoint-down(medium)
+        {
+            margin-bottom: 3.125rem;
+        }
+        flex: 45%;
+        order: 2;
+
+        img 
+        {
+            display: block;
+            width: 100%;
+            @include breakpoint-up(large)
+            {
+                width: 125%;
+            }
+        }
+
+    }
+
+    &__text
+    {
+        flex: 45%;
+        order: 1;
+    }
+
+    &__heading
+    {
+        margin-bottom: 1.5625rem;
+
+    }
+
+    &__description
+    {
+        margin-bottom: 1.5625rem;
+    }
+
+    &__ctaBtn1
+    {
+        display: inline-block;
+        color: #fff;
+        @include breakpoint-down(medium)
+        {
+            font-size: $verySmallFont;
+            padding: 0.9375rem;
+            letter-spacing: 0;
+
+            margin-right: 0.5rem;
+        }
+        font-size: $smallFont;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        padding: 0.9375rem 1.5625rem;
+        background-color: $softBlue;
+        
+        border-radius: 5px;
+        box-shadow: 3px 3px 10px rgb(0 0 0 / 15%);
+
+        margin-right: 1rem;
+    }
+
+    &__ctaBtn2
+    {
+        display: inline-block;
+        color: $veryDarkBlue;
+        
+        @include breakpoint-down(medium)
+        {
+            font-size: $verySmallFont;
+            padding: 0.9375rem;
+            letter-spacing: 0;
+        }
+        font-size: $smallFont;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        padding: 0.9375rem 1.5625rem;
+        background-color: #F7F7F7;
+        box-shadow: 3px 3px 10px rgb(0 0 0 / 15%);
+        
+        border-radius: 5px;
+
+    }
+}

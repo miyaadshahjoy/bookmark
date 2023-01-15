@@ -1,0 +1,209 @@
+html
+{
+
+    font-size: 100%;
+    box-sizing: border-box;
+
+}
+
+*, *::after, *::before
+{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+body
+{
+
+    font-family: 'Rubik', sans-serif;
+    @include breakpoint-down(medium)
+    {
+        font-size: $smallFont;
+    }
+    font-size: $bodyFont;
+    color: $grayishBlue;
+    font-weight: 400;
+    line-height: 1.3;
+    &.noscroll
+    {
+        overflow: hidden;
+    }
+}
+
+button, .button
+{
+    font-family: 'Rubik', sans-serif;
+    @include breakpoint-down(medium)
+    {
+        font-size: $smallFont;
+    }
+    font-size: $bodyFont;
+    color: $grayishBlue;
+    font-weight: 400;
+    line-height: 1.3;
+
+}
+
+//links
+
+a, a:focus, a:hover, a:active, a:visited
+{
+    text-decoration: none;
+}
+
+//headings
+h1,h2,h3
+{
+    line-height: 1;
+}
+
+h1
+{
+    color: $veryDarkBlue;
+    @include breakpoint-down(medium)
+    {
+        font-size: 1.6875rem;
+    }
+    font-size: 2.5rem;//30px
+    font-weight: 500;
+
+}
+h2
+{
+    color: $veryDarkBlue;
+    @include breakpoint-down(medium)
+    {
+        font-size: 1.375rem;
+    }
+    font-size: 1.875rem;//
+    font-weight: 500;
+}
+
+h3
+{
+    
+    color: $veryDarkBlue;
+    @include breakpoint-down(medium)
+    {
+        font-size: 1.125rem;//18px
+    }
+    font-size: 1.375rem;//22px
+    font-weight: 500;
+
+}
+
+
+//flex property
+.flex
+{
+    display: flex;
+    
+    &-ai-c
+    {
+        align-items: center;
+    }
+    &-jc-c
+    {
+        justify-content: center;
+    }
+
+    &-jc-sb
+    {
+        justify-content: space-between;
+    }
+}
+
+
+//responsive
+
+//hide for mobile and tablet
+
+.hide-mobile
+{
+    @include breakpoint-down(medium)
+    {
+        display: none;
+    }
+}
+
+
+//hide for desktop
+
+.hide-desktop
+{
+    @include breakpoint-up(large)
+    {
+        display: none;
+    }
+}
+
+//container
+
+.container
+{
+    @include breakpoint-down(medium)
+    {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    max-width: 69.375rem;
+    margin: 0 auto;
+}
+
+
+//form
+
+input#newsletter-email
+{
+    font-family: 'Rubik', sans-serif;
+    @include breakpoint-down(medium)
+    {
+        // display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+        
+    }
+    @include breakpoint-up(large)
+    {
+        margin-right: 1rem;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    font-size: $smallFont;
+    letter-spacing: 2px;
+
+    padding: 0.9375rem
+    1.25rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+input[type="submit"]
+{
+    font-family: 'Rubik', sans-serif;
+    @include breakpoint-down(medium)
+    {
+        // display: block;
+        width: 100%;
+        
+        
+    }
+
+    color: #fff;
+    font-size: $smallFont;
+    font-weight: 500;
+    letter-spacing: 2px;
+    background-color: $softRed;
+
+    padding: 0.9375rem
+    1.25rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}

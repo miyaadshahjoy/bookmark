@@ -1,0 +1,36 @@
+.newsletter
+{
+    &__contn
+    {
+        max-width: 100%;
+        text-align: center;
+        color: #fff;
+    
+        background-color: $softBlue;
+    
+        padding-top: 4.6875rem;
+        padding-bottom: 3.75rem;
+        padding-right: 1.875rem;
+        padding-left: 1.875rem;
+    
+        
+    }
+
+    &__joined
+    {
+        font-size: $verySmallFont;
+        letter-spacing: 3px;
+        margin-bottom: 1rem;
+    }
+
+    &__heading
+    {
+        h2 
+        {
+            color: #fff;
+        }
+
+        margin-bottom: 2.1875rem;
+    }
+
+}

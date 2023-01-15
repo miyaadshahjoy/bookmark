@@ -1,0 +1,96 @@
+.faq
+{
+    margin-bottom: 7.8125rem;
+    text-align: center;
+    &__heading
+    {
+        margin-bottom: 1.125rem;
+        @include breakpoint-up(large)
+        {
+            margin-bottom: 2rem;
+        }
+       
+    }
+
+    &__desc
+    {
+        padding-bottom: 3.4375rem;
+
+        @include breakpoint-up(large)
+        {
+            max-width: 540px;
+            margin: 0 auto;
+        }
+    }
+    &__accordions
+    {
+        max-width: 555px;
+        margin: 0 auto;
+        padding-bottom: 3.125rem;
+    }
+    &__accordion
+    {
+        position: relative;
+        text-align: start;
+        color: $veryDarkBlue;
+        padding-top: 1.6875rem;
+        padding-bottom: 1.6875rem;
+        width: 100%;
+        outline: none;
+        
+        background-color: #fff;
+        border-bottom: none;
+        border-top: 1px solid rgb(235,235,235);
+        border-left: none;
+        border-right: none;
+        transition: 0.4s;
+        &.active
+        {
+            color: $softRed;
+            
+            &::before
+            {
+                background-image: url('../../images/caret-up.svg');
+
+            }
+        }
+
+        &::before
+        {
+            content: "";
+            position: absolute;
+            background-image: url('../../images/caret-down.svg');
+            width: 15px;
+            height: 15px;
+            right: 20px;
+        }
+
+    }
+
+    &__panel
+    {
+        text-align: start;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        p
+        {
+            font-size: $smallFont;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    }
+
+    &__infoBtn
+    {
+        display: inline-block;
+        color: #fff;
+        font-size: $smallFont;
+        letter-spacing: 1px;
+        font-weight: 500;
+        padding: 0.9375rem 1.5625rem;
+        border-radius: 5px;
+        background-color: $softBlue;
+    }
+}
+
