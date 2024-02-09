@@ -1,1 +1,1 @@
-[# bookmark-landing-page](https://miyaadjoy.github.io/bookmark-landing-page/)
+[# bookmark-landing-page: https://miyaadshahjoy.github.io/bookmark/](https://miyaadshahjoy.github.io/bookmark/)
